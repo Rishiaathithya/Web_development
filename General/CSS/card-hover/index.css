@@ -1,0 +1,81 @@
+:root {
+  --color-1: #262626;
+  --color-2: #03bcf4;
+  --color-3: #fff;
+  --color-4: #ffcf00;
+  --color-5: #fd3600;
+  --color-6: #e30016;
+  --color-7: #fa003f;
+  --color-8: #241715;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  /* we use the display grid to place the items in center */
+  display: grid;
+  place-items: center;
+  background: var(--color-1);
+}
+/* 
+.container{
+  margin: 15px;
+  perspective: 550px;
+} */
+
+
+.container{
+  gap: 2rem;
+  display: flex;
+  background: var(--color-8);
+}
+
+.card{
+  background: var(--color-2);
+  width: 250px;
+  height: 250px;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  position: relative;
+  /* it is the main in the transform style to rotate two div boxes */
+  transform-style: preserve-3d;
+   /* it is the main in the transform style to rotate two div boxes */
+  transition: 0.7s ease-in-out;
+  cursor: pointer;
+
+
+  border-radius: 5rem;
+  border: 5px solid var(--color-7);
+}
+
+.front,.back{
+  position: absolute;
+
+  /* counter-reset: var(--color-1); */
+
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  font-weight:300;
+  /* we use the flex to center in the div the text element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+.back{
+  transform:rotateY(180deg);
+}
+
+.card:hover{
+  transform:rotateY(180deg);
+} 
+
+
+

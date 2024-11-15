@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+        .dddd{
+            width: 30%;
+        }
+        h1{
+            text-shadow: 4px 4px 20px #D11EC6;
+            position: relative;
+            font-size: 40px;
+        }
+       .wel{
+           text-shadow: 2px 2px 10px #DA1414;
+        
+       }
+
+       .class{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        color: #bbbbbb;
+        transition: all 0.3s ease;
+        font-weight: 300 ;
+       }
+       .class a{
+        transition: all 0.3s ease;
+       }
+       .class a:hover{
+        padding-left: 18px;
+        color: #ffffff;
+       }
+       .class a{
+        text-decoration: none;
+        color:#bbbbbb ;
+       }
+
+
+     </style>
+     
+    <link rel="stylesheet" type="text/css" href="Hello.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Clock.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+
+     <title> NEVA HEALTHCARE </title>
+ </head>
+
+
+<body class="body">
+
+         <p></p> <br><br>
+
+      <h1 align="center" style="color:#7A14DA;" class="h1" > <!-- styling in internal css -->
+            <div class="neva">NEVA HEALTHCARE </div>
+            
+      </h1>
+      <br><br>
+    
+
+     <!-- this is for clock display-->
+
+       <div class="container">
+        <div class="wrapper">
+         <div id="id">12:00:00 pm</div>  
+         </div>
+        </div>  
+        <script type="text/javascript">
+             setInterval(()=>{
+             const time = document.querySelector("#id");
+             let date = new Date();
+             let hours = date.getHours();
+             let minutes = date.getMinutes();
+             let seconds = date.getSeconds();
+             let session = "PM";
+             if (hours > 12){
+                hours = hours-12;
+             }
+             if (hours > 12){
+                session ="AM";
+             }
+             time.textContent = hours+":"+minutes+":"+seconds+" "+session;
+
+         });
+             
+
+        </script>
+        <br><br>
+
+
+
+        <!-- it was for a clock script -->
+         <div class="NAV" >
+                  <select><option>Home</option></select> 
+                   <select name="about" onchange="window.location.href=this.value;">
+                     <option value=""> About Us </option>
+                     <option value="C:\Users\rishi\OneDrive\Desktop\ADP\goal.html">Goals</option>
+                     <option>Mission</option>
+                   </select> 
+
+
+               <select name="Contact" onchange="window.location.href=this.value;">
+                  <option> Services</option>
+                  <option value="C:\Users\rishi\OneDrive\Desktop\ADP\contact.html">Contact Us</option>
+               </select>
+            </div>
+
+
+         <br><br><br>
+         <br><br>
+
+
+
+            <!-- welcome paragraph for our page-->
+            <!--<p class="wel">
+              Thank you for stopping by! We're a nonprofit 
+          agency dedicated to delivering quality service to our local residents. All of our proceeds contribute to building a state-of-the-art community center in Town Square.</p><br><br><br><br>-->
+
+   <div class="ct" data-aos="flip-up"><b>CT SCAN MACHINE</b> </div>   <br><br><br><br><br><br>
+   
+     <a  target="_blank" href="ct.html"> <img src="ct1.jpg" id="ctt" data-aos="zoom-in-left">
+        </a>
+ 
+      
+        <div  data-aos="fade-down-right" class="c-1"> <em>A computerized tomography (CT) scan combines a series of X-ray images taken from different angles around your body and uses computer processing to create cross-sectional images (slices) of the bones, blood vessels and soft tissues inside your body. CT scan images provide more-detailed information than plain X-rays do.
+      A CT scan has many uses, but it's particularly well-suited to quickly examine people who may have internal injuries from car accidents or other types of trauma. A CT scan can be used to visualize nearly all parts of the body and is used to diagnose disease or injury as well as to plan medical, surgical or radiation treatment.
+      <br><br>
+      During a CT scan, you're briefly exposed to ionizing radiation. The amount of radiation is greater than you would get during a plain X-ray because the CT scan gathers more-detailed information. The low doses of radiation used in CT scans have not been shown to cause long-term harm, although at much higher doses, there may be a small increase in your potential risk of cancer.CT scans have many benefits that outweigh any small potential risk. Doctors use the lowest dose of radiation possible to obtain the needed medical information. Also, newer, faster machines and techniques require less radiation than was previously used.</em>
+    </div>
+
+    
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+   
+
+    
+    
+    
+
+    
+   <div style="font-size: 30px; color: #11F8F1; text-align: center;"> <b>MRI SCAN MACHINE</b></div><br><br><br><br>
+     
+
+
+     <a href="mri.html" target="_blank"><img src="mri1.jpg" id="mri"data-aos="flip-left"
+       data-aos-easing="ease-out-cubic"
+       data-aos-duration="2000" class="dddd" ></a> 
+    <div class="Mri"  data-aos="fade-up-left"> <em> Magnetic resonance imaging (MRI) is a medical imaging technique that uses a magnetic field and computer-generated radio waves to create detailed images of the organs and tissues in your body.Most MRI machines are large, tube-shaped magnets. When you lie inside an MRI machine, the magnetic field temporarily realigns water molecules in your body. Radio waves cause these aligned atoms to produce faint signals, which are used to create cross-sectional MRI images — like slices in a loaf of bread..<br><br>
+   An MRI scan uses a large magnet, radio waves, and a computer to create a detailed, cross-sectional image of internal organs and structures.The scanner itself typically resembles a large tube with a table in the middle, allowing the patient to slide in. An MRI scan differs from CT scans and X-rays, as it does not use potentially harmful ionizing radiation.The MRI machine can also produce 3D images that can be viewed from different angles</em>
+   
+    </div>
+
+
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    
+
+
+
+    <div style="font-size:30px; color: #BC08D9; text-align: center;"data-aos="flip-up" > ULTRASONIC SCAN MACHINE </div>
+
+   <br><br><br><br>
+
+    <a href="ultra.html" target="_blank"><img src="ultra1.jpg" id="us" data-aos="zoom-out"></a>
+
+    <div class="Us" data-aos="fade-right">
+         <i> Medical ultrasound falls into two distinct categories: diagnostic and therapeutic.Diagnostic ultrasound is a non-invasive diagnostic technique used to image inside the body. Ultrasound probes, called transducers, produce sound waves that have frequencies above the threshold of human hearing (above 20KHz), but most transducers in current use operate at much higher frequencies (in the megahertz (MHz) range). Most diagnostic ultrasound probes are placed on the skin. However, to optimize image quality, probes may be placed inside the body via the gastrointestinal tract, vagina, or blood vessels. In addition, ultrasound is sometimes used during surgery by placing a sterile probe into the area being operated on.<br><br>
+        Diagnostic ultrasound can be further sub-divided into anatomical and functional ultrasound. Anatomical ultrasound produces images of internal organs or other structures. Functional ultrasound combines information such as the movement and velocity of tissue or blood, softness or hardness of tissue, and other physical characteristics, with anatomical images to create “information maps.” These maps help doctors visualize changes/differences in function within a structure or organ.Therapeutic ultrasound also uses sound waves above the range of human hearing but does not produce images. Its purpose is to interact with tissues in the body such that they are either modified or destroyed.  </i>
+    </div>
+
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br>
+    <br><br>
+    <br><br><br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    
+
+ 
+     <div style="font-size: 30px;color:#11F8F1; text-align: center;">  X-RAY MACHINE </div>   <br><br><br><br>
+     <a href="https://stock.adobe.com/search?k=xray%20machine" target="_blank"><img src="xray.jpg" id="xray" data-aos="zoom-in"></a>
+     
+     <div class="Xray"  data-aos="fade-left" ><em> X-radiation is a kind of electromagnetic radiation. X-rays are waves of X-radiation. 
+       They  have a shorter wavelength, and therefore more energy, than ultraviolet radiation. X-rays have a much shorter wavelength than visible light (the light that we can see). Radiation with shorter wavelengths (more energy) than the X-ray is called Gamma radiation (γ-rays). These are all parts of the electromagnetic spectrum.   The wavelength of X-rays covers a wide range. Most X-rays have a wavelength in the range of 0.01 to 10 nanometres.<br><br>
+       This corresponds with frequencies in the range 30 petahertz to 30 exahertz (3×1016 Hz to 3×1019 Hz) and energies in the range 100 eV to 100 keV.X-rays can go through many solid materials. For this reason, taking photograms with X-rays is used in medicine in order to see bones and other things inside the body. Sometimes the term "X-ray" means these pictures instead of the radiation that makes them. X-radiation is referred to as Röntgen radiation, after the German scientist Wilhelm Conrad Röntgen, who discovered it on November 8, 1895.[1] He named it X-radiation to signify an unknown type of radiation. Spellings of X-ray(s) in English include the variants x-ray(s), xray(s), and XrayX-rays are also used in ways such as checking for broken bones.</em></div>
+        
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br><br><br>
+    <br><br>
+    <footer class="footer">
+        <div class="Container">
+            <div class="row">
+            <div id="footer-col">
+                <h4> company</h4>
+                <ul>
+                    <li > <a href="goal.html" >About us</a></li>
+                    <li > <a href="#" >Our services</a></li>
+                    <li> <a href="privacy.html" > privacy policy</a></li>
+                    <li> <a href="#" >Affliate program</a></li>
+                </ul>
+            </div>    
+            <div id="footer-col">
+                <h4> get help</h4>
+                <ul>
+                    <li class="li"><a href="#">faq</a></li>
+                    <li class="li"><a href="#">order</a></li>
+                    <li class="li"><a href="#">order returns</a></li>
+                    <li class="li"><a href="#">payment options</a></li>
+                </ul>
+            </div>  
+            <div id ="footer-col">
+                <h4> online shop</h4>
+                <ul>
+                    <li class="li"><a href="#">x-ray machine</a></li>
+                    <li class="li"> <a href="#">scan machine</a></li>
+                    <li class="li"><a href="#">ultrasonic machine</a></li>
+                </ul>
+            </div>  
+            <div id="footer-col">
+                <h4> follow us</h4>
+                <ul>
+                    <li class="li"><a href="https://mail.google.com/mail/" target="_blank"> G-mail</li>
+                    <li class="li"> <a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li class="li"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li class="li"> <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a></li>
+               
+                 </ul>
+            </div> 
+
+            </div>
+        </div>
+    <br><br>
+    <br><br>
+
+    <!-- styling in internal -->
+    
+        <div class="class"> <a href="https://ieeexplore.ieee.org/xpl/conhome/5293852/proceeding">© Copyright 2009 WHO- All rights reserved 
+        </a></div>
+    
+    </footer>
+
+
+
+
+
+       <!-- this line for data aos -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+    <script>
+      AOS.init();
+    </script>
+
+     
+
+
+
+
+
+</body>
+</html>
+

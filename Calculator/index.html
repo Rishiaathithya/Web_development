@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1 class="header">Calculator using the Html,Css,Javascript</h1>
+
+    <div class="container">
+      <!-- the container div is used to move the tag to the center -->
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="answer" />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="answer.value = '' "
+              class="operator"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="answer.value = answer.value.toString().slice(0,-1) "
+              class="operator"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="answer.value += '.' "
+              class="operator"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="answer.value += '/' "
+              class="operator"
+            />
+          </div>
+
+          <div>
+            <!-- we are getting change in the input tag used by the name -->
+            <input
+              type="button"
+              value="7"
+              onclick="answer.value += '7' "
+              class="operand"
+            />
+            <input
+              type="button"
+              value="8"
+              onclick="answer.value +='8'"
+              class="operand"
+            />
+            <input
+              type="button"
+              value="9"
+              onclick="answer.value +='9'"
+              class="operand"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="answer.value +='+'"
+              class="operator"
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="4"
+              onclick="answer.value +='4'  "
+              class="operand"
+            />
+            <input
+              type="button"
+              value="5"
+              onclick="answer.value +='5'  "
+              class="operand"
+            />
+            <input
+              type="button"
+              value="6"
+              onclick="answer.value +='6'  "
+              class="operand"
+            />
+            <input
+              type="button"
+              value="-"
+              onclick="answer.value +='-'  "
+              class="operator"
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="3"
+              onclick="answer.value +='3'"
+              class="operand"
+            />
+            <input
+              type="button"
+              value="2"
+              onclick="answer.value +='2'"
+              class="operand"
+            />
+            <input
+              type="button"
+              value="1"
+              onclick="answer.value +='1'"
+              class="operand"
+            />
+            <input
+              type="button"
+              value="*"
+              onclick="answer.value +='*'  "
+              class="operator"
+            />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="00"
+              onclick="answer.value +='00'"
+              class="operand"
+            />
+            <input
+              type="button"
+              value="0"
+              onclick="answer.value +='0'"
+              class="operand"
+            />
+            <input
+              type="button"
+              value="="
+              onclick="answer.value = eval(answer.value)"
+              class="equal operator"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

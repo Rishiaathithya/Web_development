@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Container</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+
+
+    <h1>Word Counter</h1>
+    
+
+    <div class="container">
+
+      <textarea placeholder="enter your text here" id="textarea"></textarea>
+
+      <div class="output-container">
+     
+
+        <div class="output">
+          <p class="item">Character</p>
+          <h5 id="character">0</h5>
+        </div>
+
+        <div class="output">
+          <p class="item">Words</p>
+          <h5 id="words">0</h5>
+        </div>
+
+        <div class="output">
+          <p class="item">Sentences</p>
+          <h5 id="sentence">0</h5>
+        </div>
+
+        <div class="output">
+          <p class="item">Paragraph</p>
+          <h5 id="paragraph">0</h5>
+        </div>
+      </div>
+
+
+  </div>
+
+
+    <script>
+      let input = document.getElementById("textarea");
+      let character = document.getElementById("character");
+      let word = document.getElementById("words");
+      let sentence = document.getElementById("sentence");
+      let paragraph = document.getElementById("paragraph");
+
+      input.addEventListener("input", () => {
+        character.textContent = input.value.length;
+
+        let text = input.value.trim();
+        // it is used to remove the white space
+        
+
+        word.textContent = text.split(/\s+/).filter((item) => item).length;
+        
+        // split is used to form an array from string to sub string
+        // filter method is used to save that in new position
+
+          sentence.textContent = text.split(/[.|!|?]+/g).length-1;
+
+          // we are logical or to check the sentence to end
+
+
+          paragraph.textContent = text.replace(/\n$/gm, '').split(/\n/).length;
+
+      });
+    </script>
+  </body>
+</html>

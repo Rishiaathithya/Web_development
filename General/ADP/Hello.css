@@ -1,0 +1,136 @@
+body{
+	background-color:black;
+	overflow:auto;
+	
+}  
+body.body::-webkit-scrollbar{
+	display: none;
+
+}
+
+
+.NAV{
+        display: flex;
+        justify-content: right;
+        font: Arial;
+        left: 90%;
+        margin: 0%;
+        gap: 2em;
+        flex-direction: row;
+
+
+        
+}
+.NAV select{
+	cursor: pointer;
+	font-size: 15px;
+	background: transparent;
+	color:#14A76C;
+	padding: 5px;
+	border: 2px;
+	margin: 0%;
+}
+.NAV select:hover{
+  	
+  	color:#BC08D9 ;
+}
+
+
+
+
+a{
+	color: #FF652F;
+}
+a:hover{
+	color:#;
+
+}
+
+
+#ctt{
+	display: flex;
+	width: 35%;
+	float: right;
+	scroll-margin-right:0%;
+	
+
+	
+}
+.c-1{
+	font-size: 22px;
+	font-family: Times New Roman;
+	color: #11F8F1;
+	float:left;
+	width: 55%;
+	margin-right:0%;
+
+
+
+} 
+
+
+.ct{
+	text-align: center;
+	font-size: 30px;
+	color: #BC08D9;
+}
+
+
+.Mri{
+	font-size: 22px;
+	font-family: Times New Roman;
+	color: #BC08D9;
+	float: right;
+	width: 60%;
+
+}
+#mri{
+	
+	width: 35%;
+	float: left;
+	margin-left: 2%;
+
+}  
+
+
+
+#us{
+	width: 35%;
+	float: right;
+}
+.Us{
+	
+	font-size: 21px;
+	font-family: Times New Roman;
+	color: #11F8F1;
+	float: right;
+	width: 55%;
+	margin-left: 2%;
+
+}
+.Xray{
+	font-size: 20px;
+	font-family: Times New Roman;
+	color:#BC08D9;
+	float: right;
+	width:55%;
+	margin-right: 10%;
+
+}
+ #xray{
+ 	float:left ;
+ 	width: 30%;
+ }
+
+ .wel{
+ 	font-size: 30px;
+ 	color: white;
+ 	text-decoration: underline;
+ }
+ .ffff{
+ 	float: right;
+ }
+
+ 
+
+

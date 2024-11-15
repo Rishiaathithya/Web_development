@@ -1,0 +1,128 @@
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+
+
+
+
+
+@keyframes slideTop{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+@keyframes slideLeft{
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+
+
+/* for the progress line */
+@keyframes flow {
+    100%{
+        transform: scaleX(1);
+    }
+
+}
+
+
+
+/* for the paragraph */
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* for the span on the info */
+@keyframes anime {
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+/* for circle outline animation */
+
+@keyframes animate-path1{
+    100%{
+      stroke-dashoffset: 50;
+    }
+  }
+  
+  @keyframes animate-path2{
+    100%{
+      stroke-dashoffset: 150;
+    }
+  }
+  
+  @keyframes animate-path3{
+    100%{
+      stroke-dashoffset: 190;
+    }
+  }
+  
+  @keyframes animate-path4{
+    100%{
+      stroke-dashoffset: 100;
+    }
+  }
+
+
+
+
+
+
+
+  
+@keyframes animate-bar {
+  100%{
+    stroke-dashoffset: -1;
+  }
+}

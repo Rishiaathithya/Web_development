@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+</head>
+
+
+
+<section class="sub-header" id="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+
+        <div class="nav-links" id="navlinks">
+            <i class="bi bi-x-circle" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html" target="_blank">COURSES</a></li>
+                <li><a href="blog.html" target="_blank">BLOG</a></li>
+                <li><a href="contact.html" target="_blank">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <!-- it is outside the div tag of the menu -->
+        <i class="bi bi-three-dots" onclick="showmenu()"></i>
+    </nav>
+    <h1> About Us</h1>
+    </div>
+</section>
+
+<!--++++ About Us content +++++-->
+<section class="about-content">
+
+    <div class="row">
+        <div class="about-content-column">
+            <h1>Welcome to Largest University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum neque tempore possimus? Magni, porro
+                nostrum repudiandae obcaecati aspernatur eligendi laborum minus voluptates corporis, ea provident, iste
+                quos. Eius, atque eos facilis voluptatibus consequuntur cumque ullam soluta harum delectus
+                necessitatibus doloremque, expedita veritatis doloribus dolores suscipit tempora et autem perspiciatis
+                nihil.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+
+        </div>
+        <div class="about-content-column">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+
+
+
+
+</section>
+
+
+<!--+++++++++ FOOTER ++++++++++-->
+
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aut
+        libero quo ex! Error veritatis <br>alias autem est voluptatum quaerat
+        commodi modi distinctio labore?
+    </p>
+
+    <div class="footer-icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+    </div>
+
+    <p class="footer-p"> Made With <i class="bi bi-heart"></i> by Rishi Aathithya</p>
+
+
+</section>
+
+<!-- +++++++ javascript for toggle menu ++++++-->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showmenu() {
+        navlinks.style.right = "0";
+        navlinks.style.display = "block";
+        navlinks.style.transition = " all 1s";
+    }
+    function hidemenu() {
+        navlinks.style.right = "-200px";
+        navlinks.style.display = "none";
+        navlinks.style.transition = "all 1s";
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title> LOGIN PAGE</title>
+	<style>
+
+
+		video {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -1;
+			transform: translateX(-50%) translateY(-50%);
+			background-size: cover;
+			object-fit: cover;
+		}
+
+		.ri{
+			text-align: center;
+			font-size: 30px;
+		}
+
+
+
+		
+		.container
+		{
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+      height: 100vh;
+
+
+		}
+		#c2
+		{
+			width: fit-content;
+			margin-inline: auto;
+			padding:10px;
+			border-radius: 10px;
+			border: transparent;
+		}
+		#c2:hover
+		{
+			opacity: 0.3;
+		}
+		#name,#password
+		{
+			padding: 10px;
+			border-radius: 10px;
+			border: transparent;
+			margin: 10px;
+		}
+		form
+		{
+
+     background: rgba( 255, 255, 255, 0.25 );
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+     backdrop-filter: blur( 5px );
+     -webkit-backdrop-filter: blur( 5px );
+     border-radius: 10px;
+     border: 1px solid rgba( 255, 255, 255, 0.18 );			
+     display: flex;
+			flex-direction: column;
+			height: 50%;
+			width: 20%;
+			padding: 20px;
+			border-radius:10px;
+
+		}
+
+
+		label
+		{
+			font-size: 20px;
+		}
+
+		img{
+			width: 15%;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			top: 0%;
+			left: 50%;
+
+		}
+
+	</style>
+
+</head>
+<body class="c1">
+
+
+	<video autoplay muted loop poster="bg.jpg">
+			<source src="BackG.mp4" type="video/mp4">
+				<source src="Back.mp4" type="video/mp4">
+		</video>
+	
+
+<div class="container">
+
+<form id="myForm" method="Post" >
+				<img src="C:\Users\rishi\OneDrive\Desktop\ADP\stud.jpeg"><br><br>
+	     <div class="ri">User login </div><br>
+  <label for="name">UserName:</label>
+  <input type="text" id="name"  placeholder="enter your name">
+  <br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password"  placeholder="enter your password">
+  <br><br>
+  <button type="submit" id="c2">Login</button>
+</form >
+
+</div>	
+
+
+<!-- i want to use the ul and ol in the given webpage-->
+<script>
+	
+	const form = document.getElementById("myForm");
+
+   form.addEventListener("submit", function(event) {
+   event.preventDefault(); // prevent form from submitting
+
+  const name = document.getElementById("name").value;
+  const password = document.getElementById("password").value;
+
+  if (name === "") {
+    alert("Name must not be empty");
+  } else if (name != "admin") {
+  	alert(" enter the correct the name")
+  }else if (password.length < 6) {
+    alert("Password must be at least 6 long.");
+  } else {
+    alert("Your Login was succesful!");
+    form.reset(); // reset the form
+    window.location.href = "website.html";
+  }
+});
+
+</script>
+
+</body>
+</html>

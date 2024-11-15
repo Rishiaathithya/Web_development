@@ -1,0 +1,322 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+
+    <!-- animation on the span tag from the github -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="" class="logo">Portfolio</a>
+
+      <nav class="navbar">
+        <!-- the sytle was named a common variable -->
+        <a href="#" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About Me</a>
+        <a href="#Skill" style="--i: 3">Skill</a>
+        <a href="#projects" style="--i: 4">Portfolio</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+      </nav>
+    </header>
+
+    <section class="part1">
+      <div class="part1-img-container">
+        <div class="part1-img">
+          <img src="./images/prof.png" />
+        </div>
+      </div>
+
+      <div class="part1-content">
+        <h3>Hello , It's Me</h3>
+        <h1>Rishi Aathithya C.N</h1>
+        <h3>I am a <span id="text"></span></h3>
+        <p>
+          College Student studying at Chennai Institue of Technology.
+          <br />2nd Year B.Tech Information Technology.<br />
+        </p>
+
+        <div class="part1-sci">
+          <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+          <a href="#" style="--i: 7"><i class="bx bxl-instagram"></i></a>
+          <a href="#" style="--i: 8"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#" style="--i: 9"><i class="bx bxl-tiktok"></i></a>
+        </div>
+        <div class="part1-anchor">
+          <a href="" class="btn-box">More About Me</a>
+          <a href="./images/Student.pdf" download class="btn-box"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!------   about me --------------->
+
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Full Stack Developer</h4>
+        <p>
+          I'm a dynamic professional skilled in full-stack development, web
+          design, and data analytics. My expertise spans creating robust web
+          applications, designing engaging interfaces, and deriving insights
+          from data.Hello,As a full-stack developer, I excel in crafting
+          end-to-end solutions, ensuring seamless user experiences. My
+          proficiency in web design centers on creating visually appealing and
+          intuitive interfaces. In the realm of data analytics, I extract
+          meaningful insights, contributing to informed decision-making. With a
+          passion for innovation and a holistic skill set, I thrive in bridging
+          the gap between design aesthetics, functionality, and data-driven
+          solutions in the ever-evolving digital landscape.
+        </p>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+
+      <div class="about-img">
+        <img src="./images/prof.png" alt="" />
+      </div>
+    </section>
+
+    <!------------   service --------------------->
+
+    <section>
+      <div class="service" id="service">
+        <div class="container">
+          <h1 class="sub-title">My <span>Services</span></h1>
+          <div class="service-list">
+            <div>
+              <i class="bx bx-code" style="color: #00eeff"></i>
+              <h2>Web Developer</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                asperiores ducimus delectus? Ipsam, ut fugiat!
+              </p>
+              <a href="" class="service-read">Learn More</a>
+            </div>
+
+            <div>
+              <i class="bx bx-crop" style="color: #00eeff"></i>
+              <h2>UI/UX Designer</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                asperiores ducimus delectus? Ipsam, ut fugiat!
+              </p>
+              <a href="" class="service-read">Learn More</a>
+            </div>
+
+            <div>
+              <i class="bx bxl-apple" style="color: #00eeff"></i>
+              <h2>App Development</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                asperiores ducimus delectus? Ipsam, ut fugiat!
+              </p>
+              <a href="" class="service-read">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------- Skills -------------------->
+
+    <h1 class="sub-title">My<span> Skills</span></h1>
+
+    <section class="Skill" id="Skill">
+      <!-- the section tag is just empty -->
+      <div class="container1" id="skills">
+        <h1 class="heading1">Technical Skills</h1>
+
+        <div class="technical-bar">
+          <div class="bar">
+            <i class="bx bxl-html5" style="color: #c95d23"></i>
+            <div class="info">
+              <span>HTML</span>
+              <p>90%</p>
+            </div>
+
+            <div class="progress-line">
+              <span class="html"></span>
+            </div>
+          </div>
+
+          <div class="bar">
+            <i class="bx bxl-css3" style="color: #147bbc"></i>
+            <div class="info">
+              <span>CSS</span>
+              <p>90%</p>
+            </div>
+            <div class="progress-line">
+              <span class="css"></span>
+            </div>
+          </div>
+
+          <div class="bar">
+            <i class="bx bxl-javascript" style="color: #b0bc1e"></i>
+            <div class="info">
+              <span>JAVASCRIPT</span>
+              <p>60%</p>
+            </div>
+            <div class="progress-line">
+              <span class="js"></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-react" style="color: #69bcbc"></i>
+            <div class="info">
+              <span>React</span>
+              <p>70%</p>
+            </div>
+            <div class="progress-line">
+              <span class="react"></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-java" style="color: #c95"></i>
+            <div class="info">
+              <span>JAVA</span>
+              <p>65%</p>
+            </div>
+            <div class="progress-line">
+              <span class="java"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------- for professional skills ------------------->
+
+      <div class="container1">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bar">
+          <div class="radial-bars">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="radial-bars-text">
+              <p class="percentage">90%</p>
+              <p class="text">Creativity</p>
+            </div>
+          </div>
+
+          <div class="radial-bars">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="radial-bars-text">
+              <p class="percentage">70%</p>
+              <p class="text">Communication</p>
+            </div>
+          </div>
+          <div class="radial-bars">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="radial-bars-text">
+              <p class="percentage">60%</p>
+              <p class="text" id="problem">Problem Solving</p>
+            </div>
+          </div>
+          <div class="radial-bars">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="radial-bars-text">
+              <p class="percentage">80%</p>
+              <p class="text">Team Work</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------    project  ----------------------->
+
+    <section id="projects">
+      <h1>My <span>Projects</span></h1>
+      <div class="row">
+        <div class="column1-projects">
+          <img src="./images/photo1.png" />
+          <div class="projects-text">COLLEGE WEBSITE</div>
+        </div>
+
+        <div class="column2-projects">
+          <img src="./images/photo2.png" />
+          <div class="projects-text">ECOMMERCE WEBSITE</div>
+        </div>
+        <div class="column3-projects">
+          <img src="./images/photo3.png" />
+          <div class="projects-text">BOOTSTRAP WEBSITE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us  -->
+
+    <section id="contact" class="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Lets Work Together</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          provident dignissimos repellat nisi aliquam mollitia.
+        </p>
+        <div class="contact-list">
+          <li><i class="bx bxs-send"></i>rishiadhithya1997@gmail.com</li>
+          <li><i class="bx bxs-phone"></i>8248469778</li>
+        </div>
+        <div class="contact-icon">
+          <a href="#" style="--i: 6"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#" style="--i: 7"><i class="bx bxl-instagram"></i></a>
+          <a href="#" style="--i: 8"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#" style="--i: 9"><i class="bx bxl-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Mail-Id " required>
+          <input type="" placeholder="enter Your Subject">
+          <textarea name="" id="" cols="40" rows="10" placeholder="enter Your Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>Developed By Rishi Aathithya @2023</p>
+    </div>
+
+    <!----------------- script for the portfolio ---------------->
+    <script src="index.js"></script>
+
+    <!---------------- fontawesome script ------------>
+  </body>
+</html>
